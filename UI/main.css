@@ -1,750 +1,544 @@
-body{
-    font-family: 'Courier New', Courier, monospace;
-    font: 15px;
-    padding:0;
-    margin:0;
-    background-color:#f4f4f4;
-  }
-  
-  /* Global */
-  .container{
-    width:80%;
-    margin:auto;
-    overflow:hidden;
-  }
-  
-  ul{
-    margin:0;
-    padding:0;
-  }
-  
-  .button_1{
-    height:38px;
-    background:#e8491d;
-    border:0;
-    padding-left: 20px;
-    padding-right:20px;
-    color:#ffffff;
-  }
-  
-  .dark{
-    padding:15px;
-    background:#35424a;
-    color:#ffffff;
-    margin-top:10px;
-    margin-bottom:10px;
-  }
-  
-  /* Header **/
-  header{
-    background:#35424a;
-    color:#ffffff;
-    padding-top:30px;
-    min-height:70px;
-    border-bottom:#e8491d 3px solid;
-  }
-  
-  header a{
-    color:#ffffff;
-    text-decoration:none;
-    text-transform: uppercase;
-    font-size:16px;
-  }
-  
-  header li{
-    float:left;
-    display:inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header #branding{
-    float:left;
-  }
-  
-  header #branding h1{
-    margin:0;
-  }
-  
-  header nav{
-    float:right;
-    margin-top:10px;
-  }
-  
-  header .highlight, header .current a{
-    color:#e8491d;
-    font-weight:bold;
-  }
-  
-  header a:hover{
-    color:#cccccc;
-    font-weight:bold;
-  }
-  
-  /* Showcase */
-  #showcase{
-    min-height:400px;
-    background:url('../img/showcase.jpg') no-repeat 0 -400px;
-    text-align:center;
-    color:#ffffff;
-  }
-  
-  #showcase h1{
-    margin-top:100px;
-    font-size:55px;
-    margin-bottom:10px;
-  }
-  
-  #showcase p{
-    font-size:20px;
-  }
-  
-  /* Newsletter */
-  #newsletter{
-    padding:15px;
-    color:#ffffff;
-    background:#35424a
-  }
-  
-  #newsletter h1{
-    float:left;
-  }
-  
-  #newsletter form {
-    float:right;
-    margin-top:15px;
-  }
-  
-  #newsletter input[type="email"]{
-    padding:4px;
-    height:25px;
-    width:250px;
-  }
-  
-  /* Boxes */
-  #boxes{
-    margin-top:20px;
-  }
-  
-  #boxes .box{
-    float:left;
-    text-align: center;
-    width:30%;
-    padding:10px;
-  }
-  
-  #boxes .box img{
-    width:90px;
-  }
-  
-  /* Sidebar */
-  aside#sidebar{
-    float:right;
-    width:30%;
-    margin-top:10px;
-  }
-  
-  aside#sidebar .quote input, aside#sidebar .quote textarea{
-    width:90%;
-    padding:5px;
-  }
-  
-  /* Main-col */
-  article#main-col{
-    float:left;
-    width:65%;
-  }
-  
-  /* Services */
-  ul#services li{
-    list-style: none;
-    padding:20px;
-    border: #cccccc solid 1px;
-    margin-bottom:5px;
-    background:#e6e6e6;
-  }
-  
-  footer{
-    padding:20px;
-    margin-top:20px;
-    color:#ffffff;
-    background-color:#e8491d;
-    text-align: center;
-  }
-  
-  /* Media Queries */
-  @media(max-width: 768px){
-    header #branding,
-    header nav,
-    header nav li,
-    #newsletter h1,
-    #newsletter form,
-    #boxes .box,
-    article#main-col,
-    aside#sidebar{
-      float:none;
-      text-align:center;
-      width:100%;
-    }
-  
-    header{
-      padding-bottom:20px;
-    }
-  
-    #showcase h1{
-      margin-top:40px;
-    }
-  
-    #newsletter button, .quote button{
-      display:block;
-      width:100%;
-    }
-  
-    #newsletter form input[type="email"], .quote input, .quote textarea{
-      width:100%;
-      margin-bottom:5px;
-    }
-  }
-  body {
-    /* font: 15px/1.5 Arial, Helvetica,sans-serif; */
-    font-family: "Nunito", sans-serif;
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    background-color: #f4f4f4;
-  }
-  
-  a {
-      text-decoration: none;
-  }
-  
-  /* Global */
-  .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .button_1 {
-    height: 38px;
-    background: #e8491d;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #ffffff;
-  }
-  
-  .dark {
-    /* padding: 15px; */
-    /* background: #35424a; */
-    color: #ffffff;
-    /* margin-top: 10px; */
-    margin-bottom: 10px;
-  }
-  
-  /* Header **/
-  header {
-    background: #f5f3e6;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #523295 3px solid;
-  }
-  
-  header a {
-    color: #523295;
+body {
+  /* font: 15px/1.5 Arial, Helvetica,sans-serif; */
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid #523295;
-    padding: 6px 30px;
-    border-radius: 6px;
-  }
-  
-  header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  
-  header #branding {
-    float: left;
-  }
-  
-  header #branding h1 {
-    margin: 0;
-  }
-  
-  header nav {
-    float: right;
-    margin-top: 10px;
-  }
-  
-  header .highlight {
-    font-family: "Righteous";
-    color: #523295;
-    font-weight: 900;
-    text-shadow: 2px 2px;
-    text-transform: uppercase;
-  }
-  
-  header .current a {
-    color: #523295;
-    font-size: 15px;
-    font-weight: 900;
-  }
-  
-  header a:hover {
-    background: #523295;
-    border: 1px solid #523295;
-    color: #ffad01;
-    font-weight: 900;
-  }
-  
-  /* Showcase */
-  #showcase {
-    min-height: 540px;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
-      url("img/background.jpg");
-    text-align: center;
-    color: #ffffff;
-    background-size: cover;
-  }
-  
-  div.container button {
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+
+.dark {
+  /* padding: 15px; */
+  /* background: #35424a; */
+  color: #ffffff;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}
+
+/* Header **/
+header {
+  background: #f5f3e6;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #523295 3px solid;
+}
+
+header a {
+  color: #523295;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid #523295;
+  padding: 6px 30px;
+  border-radius: 6px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight {
+  font-family: "Righteous";
+  color: #523295;
+  font-weight: 900;
+  text-shadow: 2px 2px;
+  text-transform: uppercase;
+}
+
+header .current a {
+  color: #523295;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+header a:hover {
+  background: #523295;
+  border: 1px solid #523295;
+  color: #ffad01;
+  font-weight: 900;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 540px;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("img/background.jpg");
+  text-align: center;
+  color: #ffffff;
+  background-size: cover;
+}
+
+div.container button {
+  color: #53338e;
+  padding: 10px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: #ffad01;
+  border-color: #eea236;
+  text-transform: uppercase;
+  font-family: "Righteous", cursive;
+  cursor: pointer;
+}
+
+
+div.container button:hover{
+    box-shadow: 0 0 0 0.2rem rgba(93, 64, 21, 0.25);
+}
+
+
+select#acctType {
+    height: 37px;
+    width: 74%;
+}
+
+div a#likeAbutton {
     color: #53338e;
-    padding: 10px 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-    background-color: #ffad01;
-    border-color: #eea236;
-    text-transform: uppercase;
-    font-family: "Righteous", cursive;
-    cursor: pointer;
-  }
-  
-  
-  div.container button:hover{
-      box-shadow: 0 0 0 0.2rem rgba(93, 64, 21, 0.25);
-  }
-  
-  
-  select#acctType {
-      height: 37px;
-      width: 74%;
-  }
-  
-  div a#likeAbutton {
-      color: #53338e;
-    padding: 20px 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-    background-color: #ffad01;
-    border-color: #eea236;
-    text-transform: uppercase;
-    font-family: "Righteous", cursive;
-    cursor: pointer;
-  }
-  
-  
-  
-  #showcase h1 {
-    margin-top: 170px;
-    font-size: 55px;
-    margin-bottom: 10px;
-    font-family: "Righteous", cursive;
-    text-transform: uppercase;
-  }
-  
-  #showcase p {
-    font-size: 20px;
-    font-family: "Righteous", cursive;
-  }
-  
-  /* eventHeader */
-  #eventHeader {
-    font-size: 12px;
-    padding: 20px;
-    color: #ffffff;
-    background: #523295;
-    font-family: "Righteous", cursive;
-  }
-  
-  #eventHeader h1 {
-    text-align: center;
+  padding: 20px 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: #ffad01;
+  border-color: #eea236;
+  text-transform: uppercase;
+  font-family: "Righteous", cursive;
+  cursor: pointer;
+}
+
+
+
+#showcase h1 {
+  margin-top: 170px;
+  font-size: 55px;
+  margin-bottom: 10px;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+}
+
+#showcase p {
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+}
+
+/* eventHeader */
+#eventHeader {
+  font-size: 12px;
+  padding: 20px;
+  color: #ffffff;
+  background: #523295;
+  font-family: "Righteous", cursive;
+}
+
+#eventHeader h1 {
+  text-align: center;
+  color: #ffad01;
+    font-size: 25px;
+}
+
+#eventHeader form {
+  float: right;
+  margin-top: 15px;
+}
+
+/* #eventHeader input[type="email"] {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+} */
+
+/* Boxes */
+#boxes {
+  margin-top: 30px;
+  font-family: "Righteous";
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 90px;
+}
+
+/* Sidebar */
+aside#sidebar {
+  float: left;
+  width: 15%;
+  margin-top: 0px;
+  background-color: #523295;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Main-col */
+article#main-col {
+  float: right;
+  width: 80%;
+}
+
+/* Services */
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+
+#welcomeNote{
+    font-size: 60px;
     color: #ffad01;
-      font-size: 25px;
-  }
-  
-  #eventHeader form {
-    float: right;
-    margin-top: 15px;
-  }
-  
-  /* #eventHeader input[type="email"] {
-    padding: 4px;
-    height: 25px;
-    width: 250px;
-  } */
-  
-  /* Boxes */
-  #boxes {
-    margin-top: 30px;
-    font-family: "Righteous";
-  }
-  
-  #boxes .box {
-    float: left;
+    font-weight: 900;
+    font-family: 'Nunito';
+}
+
+.centerItems{
     text-align: center;
-    width: 30%;
-    padding: 10px;
+}
+
+.centerItems h3{
+
+font-size: 35px;
+font-family: 'Nunito';
+}
+
+div.terms{
+    margin-top: 10px;
+    font-weight: 900;
+    color: #523295;
+}
+
+
+footer {
+  padding: 20px;
+  margin-top: 40px;
+  color: #523295;
+  /* background-color:#000; */
+  text-align: center;
+}
+footer p {
+  font-weight: 900;
+}
+
+/* Forms Style
+ */
+
+form#signupForm {
+  border-radius: 5px;
+  padding: 20px 15%;
+  margin-top: 30px;
+}
+
+form > div 
+{
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+
+form > div > label {
+  width: 21%;
+  float: left;
+  padding-right: 10px;
+  padding-top: 10px;
+  color: #53338e;
+  font-family: "Nunito";
+  font-size: 15px;
+  font-weight: bold;
+}
+.padPadding 
+{
+    padding-top: 19px;
+}
+
+form.userDetail {
+    /* border: 1px solid #ccc; */
+    background: #e0dfdf38;
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+form#signupForm.userDetail{
+    padding-left: 25%;
+}
+
+form > div > div {
+  width: 75%;
+  float: right;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 70%;
+  border: 1px solid #523295;
+  padding: 10px;
+  border-radius: 4px;
+ 
+}
+
+/* input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password] {
+    width: 50%;
+  } */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #523295;
+  box-shadow: 0 0 0 0.2rem rgba(50, 32, 88, 0.25);
+  background: #fff;
+  font-family: 'Nunito';
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* box-shadow: 2px 2px 2px 2px #523295; */
+}
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
   }
   
-  #boxes .box img {
-    width: 90px;
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
   }
   
-  /* Sidebar */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+
+
+
+
+
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0;
+  }
+  form > div > label {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+
+  form > div > div {
+    width: 100%;
+    float: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="url"],
+  input[type="password"],
+  select {
+    width: 90%;
+  }
+
+  div.container button {
+    width: 100%;
+  }
+
+  form#signupForm{
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  form#signupForm {
+    border-radius: 5px;
+    padding: 20px 0%;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+  legend {
+    text-align: right;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #eventHeader h1,
+  #eventHeader form,
+  #boxes .box,
+  article#main-col,
   aside#sidebar {
-    float: left;
-    width: 15%;
-    margin-top: 0px;
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+
+  #showcase h1 {
+    margin-top: 40px;
+  }
+
+  #eventHeader button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* #signupForm{
+    padding: 20px 15%;
+} */
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #523295;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  th{
+      background-color: #523295;
+      color: #fff;
+  }
+  
+
+  tr:nth-child(even){
+      background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #523295;
+    color: #fff;
+    cursor: pointer;
+  }
+
+ul.verticalNav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* width: 150px; */
+    /* height: 100%; */
     background-color: #523295;
   }
   
-  aside#sidebar .quote input,
-  aside#sidebar .quote textarea {
-    width: 90%;
-    padding: 5px;
-  }
-  
-  /* Main-col */
-  article#main-col {
-    float: right;
-    width: 80%;
-  }
-  
-  /* Services */
-  ul#services li {
-    list-style: none;
-    padding: 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: #e6e6e6;
-  }
-  
-  
-  #welcomeNote{
-      font-size: 60px;
-      color: #ffad01;
-      font-weight: 900;
-      font-family: 'Nunito';
-  }
-  
-  .centerItems{
-      text-align: center;
-  }
-  
-  .centerItems h3{
-  
-  font-size: 35px;
-  font-family: 'Nunito';
-  }
-  
-  div.terms{
-      margin-top: 10px;
-      font-weight: 900;
-      color: #523295;
-  }
-  
-  
-  footer {
-    padding: 20px;
-    margin-top: 40px;
-    color: #523295;
-    /* background-color:#000; */
-    text-align: center;
-  }
-  footer p {
-    font-weight: 900;
-  }
-  
-  /* Forms Style
-   */
-  
-  form#signupForm {
-    border-radius: 5px;
-    padding: 20px 15%;
-    margin-top: 30px;
-  }
-  
-  form > div 
-  {
-    clear: both;
-    overflow: hidden;
-    padding: 1px;
-    margin: 0 0 10px 0;
-  }
-  
-  form > div > label {
-    width: 21%;
-    float: left;
-    padding-right: 10px;
-    padding-top: 10px;
-    color: #53338e;
-    font-family: "Nunito";
-    font-size: 15px;
-    font-weight: bold;
-  }
-  .padPadding 
-  {
-      padding-top: 19px;
-  }
-  
-  form.userDetail {
-      /* border: 1px solid #ccc; */
-      background: #e0dfdf38;
-      width: 800px;
-      margin: 0 auto;
-      
-  }
-  
-  form#signupForm.userDetail{
-      padding-left: 25%;
-  }
-  
-  form > div > div {
-    width: 75%;
-    float: right;
-  }
-  
-  
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  select {
-    width: 70%;
-    border: 1px solid #523295;
-    padding: 10px;
-    border-radius: 4px;
-   
-  }
-  
-  /* input[type=text],
-    input[type=email],
-    input[type=url],
-    input[type=password] {
-      width: 50%;
-    } */
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  select:focus,
-  textarea:focus {
-    outline: 0;
-    border-color: #523295;
-    box-shadow: 0 0 0 0.2rem rgba(50, 32, 88, 0.25);
-    background: #fff;
+  li.verticalNavLi a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
     font-family: 'Nunito';
     font-size: 15px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* box-shadow: 2px 2px 2px 2px #523295; */
   }
   
-  
-  
-  
-  /* Dropdown Button */
-  .dropbtn {
-      background-color: #3498DB;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-    }
-    
-    .dropbtn:hover, .dropbtn:focus {
-      background-color: #2980B9;
-    }
-    
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f1f1f1;
-      min-width: 160px;
-      overflow: auto;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .dropdown a:hover {background-color: #ddd;}
-    
-    .show {display: block;}
-    
-  
-  
-  
-  
-  
-  
-  @media (max-width: 600px) {
-    form > div {
-      margin: 0 0 15px 0;
-    }
-    form > div > label {
-      width: 100%;
-      float: none;
-      margin: 0 0 5px 0;
-    }
-  
-    form > div > div {
-      width: 100%;
-      float: none;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="url"],
-    input[type="password"],
-    select {
-      width: 90%;
-    }
-  
-    div.container button {
-      width: 100%;
-    }
-  
-    form#signupForm{
-        width: 100%;
-        margin: 0 auto;
-    }
-  
-    form#signupForm {
-      border-radius: 5px;
-      padding: 20px 0%;
-      margin-top: 30px;
-    }
+  /* Change the link color on hover */
+  li.verticalNavLi a:hover {
+    background-color: #eea236;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 20px;
+    font-weight: bold;
   }
-  @media (min-width: 1200px) {
-    form > div > label,
-    legend {
-      text-align: right;
-    }
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    header #branding,
-    header nav,
-    header nav li,
-    #eventHeader h1,
-    #eventHeader form,
-    #boxes .box,
-    article#main-col,
-    aside#sidebar {
-      float: none;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  
-    header {
-      padding-bottom: 20px;
-    }
-  
-    #showcase h1 {
-      margin-top: 40px;
-    }
-  
-    #eventHeader button,
-    .quote button {
-      display: block;
-      width: 100%;
-    }
-  }
-  
-  /* #signupForm{
-      padding: 20px 15%;
-  } */
-  
-  
-  table {
-      border-collapse: collapse;
-      border-spacing: 0;
-      width: 100%;
-      border: 1px solid #523295;
-    }
-    
-    th, td {
-      text-align: left;
-      padding: 8px;
-    }
-    th{
-        background-color: #523295;
-        color: #fff;
-    }
-    
-  
-    tr:nth-child(even){
-        background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-      background-color: #523295;
-      color: #fff;
-      cursor: pointer;
-    }
-  
-  ul.verticalNav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      /* width: 150px; */
-      /* height: 100%; */
-      background-color: #523295;
-    }
-    
-    li.verticalNavLi a {
-      display: block;
-      color: #fff;
-      padding: 8px 16px;
-      text-decoration: none;
-      font-family: 'Nunito';
-      font-size: 15px;
-      font-weight: bold;
-    }
-    
-    /* Change the link color on hover */
-    li.verticalNavLi a:hover {
-      background-color: #eea236;
-      color: white;
-      font-family: 'Nunito';
-      font-size: 20px;
-      font-weight: bold;
-    }
