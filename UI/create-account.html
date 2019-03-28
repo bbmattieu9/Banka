@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Simple Bank Application" />
+    <meta name="keywords" content="Banking Banta AndelaDeveloperChanllenge" />
+    <meta name="author" content="Babatunde Mattieu" />
+    <title>Create Account </title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Righteous" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+          <div id="branding">
+            <h1><span class="highlight">Banka</span></h1>
+          </div>
+          <nav>
+            <ul>
+              <!-- <li class="current"><a href="index.html">Home</a></li> -->
+              <li><a href="signup.html">Sign up</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <section id="eventHeader">
+      <div class="container">
+        <h1>Open an Account</h1>
+        
+      </div>
+    </section>
+
+<section id="">
+    <div class="container">
+            <form action="#" id="signupForm">
+                    <div>
+                      <label for="email">Email</label>
+                      <div>
+                        <input id="email" name="email" type="email" spellcheck="false">
+                      </div>
+                    </div>
+                      
+                    <div>
+                      <label id="firstname" for="firstname">
+                        Firstname
+                      </label>
+                      <div>
+                        <input id="firstname" name="firstname" type="text" > 
+                     </div>
+                    </div>
+            
+                    <div>
+                        <label id="lastname" for="lastname">
+                          Lastname
+                        </label>
+                        <div>
+                          <input id="lastname" name="lastname" type="text" > 
+                       </div>
+                      </div>
+
+                      <div>
+                            <label id="acctType" for="acctType">
+                               Account Type
+                            </label>
+                            <div>
+                            <select id="acctType" name="acctType"> 
+                              <option>Select Account type</option>
+                              <option value="Savings">Savings Account</option>
+                              <option value="Current">Current Account</option>
+                              <option value="Business">Business Account</option>
+                            </select>
+                            </div>
+                          </div>
+                          
+                          <div >
+                            <div class="terms">
+                                <input type="checkbox" name="terms" value="Yes" checked> Accept our policy terms and condition<br>
+                            </div>
+                             
+                          </div>
+                 
+                    
+                    <div>
+                          <div>
+
+                              <button type="button" onclick="location.href='confirmation.html'">Create an account</button>
+
+                            <!-- <a id="likeAbutton" href="dashboard.html">Create Account</a> -->
+                                <!-- <button type="submit" onclick="location.href='dashboard.html'"> Create Account</button> -->
+                            <!-- <input id="crAccount" name="crAccount" type="submit" value="Create Account"> -->
+                      </div>
+                      </div>
+                    
+                  </form>
+            
+    </div>
+    
+</section>
+
+    
+    <footer>
+        <p>An Andela Bootcamp Project, Copyright &copy; 2019</p>
+    </footer>
+  </body>
+</html>
