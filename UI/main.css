@@ -492,7 +492,20 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #523295;
+    border: 1px solid #523986;
+  }
+
+  td a {
+      text-decoration-color: none;
+      color: #523986;
+  }
+
+  td a.white-hover  {
+    color: #000;
+  }
+
+  td a :hover {
+    color: #fff;
   }
   
   th, td {
@@ -502,6 +515,10 @@ table {
   th{
       background-color: #523295;
       color: #fff;
+  }
+  
+  i.fas.fa-trash-alt{
+    color: red;
   }
   
 
@@ -542,3 +559,4 @@ ul.verticalNav {
     font-size: 20px;
     font-weight: bold;
   }
+
