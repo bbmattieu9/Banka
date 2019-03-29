@@ -492,7 +492,20 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    border: 1px solid #523295;
+    border: 1px solid #523986;
+  }
+
+  td a {
+      text-decoration-color: none;
+      color: #523986;
+  }
+
+  td a.white-hover  {
+    color: #000;
+  }
+
+  td a :hover {
+    color: #fff;
   }
   
   th, td {
@@ -542,3 +555,4 @@ ul.verticalNav {
     font-size: 20px;
     font-weight: bold;
   }
+
