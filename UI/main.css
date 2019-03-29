@@ -517,6 +517,10 @@ table {
       color: #fff;
   }
   
+  i.fas.fa-trash-alt{
+    color: red;
+  }
+  
 
   tr:nth-child(even){
       background-color: #f2f2f2;
