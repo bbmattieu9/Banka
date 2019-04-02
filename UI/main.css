@@ -552,11 +552,13 @@ ul.verticalNav {
   }
   
   /* Change the link color on hover */
-  li.verticalNavLi a:hover {
+  li.verticalNavLi a:hover,
+  li.verticalNavLi a.active-nav:active {
     background-color: #eea236;
     color: white;
     font-family: 'Nunito';
     font-size: 20px;
     font-weight: bold;
   }
+
 
